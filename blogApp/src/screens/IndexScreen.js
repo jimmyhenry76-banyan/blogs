@@ -1,13 +1,28 @@
 import React, { useContext } from 'react';
 import { View, Text, FlatList, Button, StyleSheet, TouchableOpacity } from 'react-native';
-import { Context } from '../context/BlogContext';
+import { Context } from '../components/context/BlogContext';
 import { Feather } from '@expo/vector-icons';
-
+// import data from './'
 const IndexScreen = ({ navigation }) => {
     const  {state, deleteBlogPost } = useContext(Context);
 
+//     useEffect = (() => {},[]);
+
+// useEffect = (()=> { 
+//     let rando = Math.floor(Math.random() * data.length);
+//     let oldPicArr = [data];
+//     if(data.length > 0){
+//         let pic = data[rando]
+//         let newPicArr = oldPicArr.push(pic);
+//          data = newPicArr;
+//          newPicArr = data;
+//     }else return data[0]} , [ data ])
+
+// useEffect = (() => {}, [newPicArr])
+
     return( 
         <View>
+            
             <FlatList
                 data={state}
                 keyExtractor={(blogPost) => blogPost.title}
@@ -57,3 +72,4 @@ const styles = StyleSheet.create({
     }
 })
 export default IndexScreen;
+

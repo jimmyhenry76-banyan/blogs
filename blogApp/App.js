@@ -2,10 +2,10 @@ import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import IndexScreen from './src/screens/IndexScreen';
-import { Provider } from './src/context/BlogContext';
-import ShowScreen from './src/screens/ShowScreen';
-import CreateScreen from './src/screens/CreateScreen';
-import EditScreen from './src/screens/EditScreen';
+import { Provider } from './src/components/context/BlogContext';
+import ShowScreen from './src/screens/blogScreens/ShowScreen';
+import CreateScreen from './src/screens/blogScreens/CreateScreen';
+import EditScreen from './src/screens/blogScreens/EditScreen';
 
 const navigator = createStackNavigator({
   Index: IndexScreen,

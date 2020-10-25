@@ -17,7 +17,7 @@ const BlogPostForm = ({ onSubmit, initialValues }) => {
            />
         </View>
     )
-    
+
 };
 
 BlogPostForm.defaultProps = {
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default BlogPostForm;
+export default BlogPostForm; 
